@@ -146,7 +146,7 @@ ul {
 
 .produto-botoes {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   gap: 8px;
   align-items: center;
   margin-bottom: 20px;
@@ -297,5 +297,182 @@ body.menu-open {
 
   .sobre-conteudo {
     grid-template-columns: 1fr;
+  }
+}
+
+.diferenciais-bg {
+  background: #fdf6f1 url("./img/banner-diferenciais.png") no-repeat center
+    center;
+  background-size: cover;
+}
+
+.diferenciais-conteudo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 40px 0px 40px;
+}
+
+.d-conteudo-bg {
+  background: white;
+  border-radius: 40px 40px 0 0;
+  padding: 50px 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.d-conteudo-bg h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.d-conteudo-bg h2 span {
+  color: #ee7522;
+}
+
+.diferenciais-lista {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.diferenciais {
+  flex: 1;
+  max-width: 320px;
+  min-width: 280px;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diferenciais:hover {
+  transform: scale(1.1);
+  transition: 0.1s;
+}
+
+.diferenciais h3 {
+  color: #ee7522;
+  font-size: 1.25rem;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.diferenciais p {
+  color: #8a8a8a;
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+  .diferenciais-conteudo {
+    padding: 80px 20px 0 20px;
+  }
+
+  .d-conteudo-bg {
+    padding: 40px 20px;
+    margin-bottom: -60px;
+  }
+
+  .d-conteudo-bg h2 {
+    font-size: 2rem;
+  }
+
+  .diferenciais-lista {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .diferenciais {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.galeria-bg {
+  background-color: #ee7522;
+}
+.galeria-conteudo {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.galeria-info h2 {
+  font-weight: 900;
+  font-size: 8rem;
+  line-height: 0.8;
+  color: #b85115;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+  margin-bottom: 36px;
+}
+.galeria-botao {
+  padding: 16px;
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  gap: 12px;
+  background-color: white;
+  border-radius: 50px;
+}
+.galeria-botao span {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #ff6e00;
+}
+.galeria-imagens img:first-child {
+  grid-column: 1/-1;
+}
+
+.galeria-imagens {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.galeria-imagens img {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .galeria-bg {
+    margin-top: 40px;
+  }
+  .galeria-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .galeria-info h2 {
+    max-width: initial;
+    text-transform: capitalize;
+    word-break: normal;
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  .galeria-botao {
+    padding: 8px 12px;
+  }
+  .galeria-imagens {
+    gap: 10px;
+  }
+  .galeria-info {
+    text-align: center;
+  }
+  .galeria-botao span {
+    font-size: 0.8rem;
+  }
+  .galeria-botao > a > img {
+    display: none;
   }
 }
