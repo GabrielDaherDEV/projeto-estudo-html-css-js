@@ -15,16 +15,20 @@
 
 <body>
   <header>
-
-
     <div class="header-bg container">
-      <img src="./img/logo-gp-H.jpg" alt="">
+      <img src="./img/logo-gp-H.jpg" alt="Logo Grupo Paris">
+
+      <button class="mobile-menu-button" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="header-lista" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
 
       <nav>
-        <ul class="header-lista">
+        <ul class="header-lista" id="nav-list">
           <li class="item"><a href="#">HOME</a></li>
           <li class="item"><a href="#sobre">SOBRE</a></li>
-          <li class="item"><a href="#">PRODUTOS</a></li>
+          <li class="item"><a href="#produtos">PRODUTOS</a></li>
           <div class="header-cta">
             <img src="./img/redes/whatsapp.svg" alt="">
             <a href="#">SOLICITE<br>ORÇAMENTO</a>
@@ -50,7 +54,7 @@
 
     </section>
 
-    <section class="produtos-bg">
+    <section id="produtos" class="produtos-bg">
       <h2 class="produtos-titulo">Nossos Serviços</h2>
       <div class="produto-card container">
         <div class="produto">
