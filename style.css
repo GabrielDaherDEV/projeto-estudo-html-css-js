@@ -2,10 +2,12 @@
 body {
   margin: 0;
   font-family: "Montserrat";
-  padding-bottom: 600px;
+
   box-sizing: border-box;
 }
-li {
+li,
+ul {
+  padding: 0;
   list-style: none;
 }
 a {
@@ -587,5 +589,84 @@ body.menu-open {
   .contato > h2:first-child {
     font-size: 2rem;
     margin-bottom: 0px;
+  }
+}
+.footer-bg {
+  background-color: #ee7522;
+}
+
+.footer-conteudo {
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  padding: 100px 20px 40px 20px;
+  gap: 80px 20px;
+}
+
+.footer-conteudo > img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.nav-secundario li {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 45px;
+}
+.item-f > a {
+  color: white;
+}
+
+.footer-contato h3 {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.footer-contato ul > li {
+  margin-bottom: 12px;
+  color: white;
+  font-size: 1.125rem;
+}
+.footer-contato ul > li:nth-child(1)::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 6px;
+  background: white;
+  margin-bottom: 8px;
+}
+.footer-redes {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.footer-conteudo span {
+  color: white;
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .footer-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .footer-contato {
+    text-align: center;
+  }
+  .footer-contato ul > li:nth-child(1)::before {
+    display: none;
+  }
+  .footer-redes {
+    justify-content: center;
+  }
+  .footer-conteudo > img {
+    display: none;
+  }
+  .footer-conteudo {
+    padding: 60px;
   }
 }
